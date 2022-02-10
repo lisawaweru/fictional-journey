@@ -7,6 +7,9 @@ async function github(username) {
     return data;
 }
 function display(projects) {
+    if (projects == undefined) {
+        const myError = newError("I'm an error") ;
+    }
 
 
     const sorted = projects.sort((projectA, projectB) => {
